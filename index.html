@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaHealth - Navbar</title>
+  <script src="https://cdn.tailwindcss.com"></script> <!-- Tailwind CSS CDN -->
+</head>
+<body class="bg-gray-100">
+  <!-- Navbar -->
+  <nav class="bg-white shadow-lg border-b border-gray-300">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <!-- Brand -->
+      <div class="flex items-center">
+        <img src="heart.png" alt="NovaHealth Logo" class="h-12 mr-3"> <!-- Replace with your logo -->
+        <span class="text-3xl font-extrabold text-blue-600">NovaHealth</span>
+      </div>
+
+      <!-- Navbar Links -->
+      <div class="hidden md:flex space-x-8 text-lg">
+        <a href="#home" class="text-gray-700 hover:text-blue-600 font-medium">Home</a>
+        <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
+        <a href="#departments" class="text-gray-700 hover:text-blue-600 font-medium">Departments</a>
+        <a href="#doctors" class="text-gray-700 hover:text-blue-600 font-medium">Doctors</a>
+        <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+      </div>
+
+      <!-- CTA Button -->
+      <a href="appointment.html" class="hidden md:inline-block bg-blue-600 text-white py-2 px-4 rounded-lg font-semibold hover:bg-blue-700">Book Appointment</a>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuToggle" class="md:hidden text-gray-700 focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t border-gray-300">
+      <a href="#home" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Home</a>
+      <a href="#services" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Services</a>
+      <a href="#departments" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Departments</a>
+      <a href="#doctors" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Doctors</a>
+      <a href="#contact" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Contact</a>
+      <a href="appointment.html" class="block py-2 px-4 bg-blue-600 text-white font-semibold hover:bg-blue-700">Book Appointment</a>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-blue-600 to-blue-400 text-white py-20">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6">
+      <!-- Text Content -->
+      <div class="md:w-1/2 space-y-6">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+          Welcome to <span class="text-yellow-300">NovaHealth</span>
+        </h1>
+        <p class="text-lg md:text-xl">
+          Your trusted partner in exceptional healthcare services. We prioritize your well-being and are here for you 24/7.
+        </p>
+        <a href="#services" class="inline-block bg-yellow-300 text-blue-800 py-3 px-6 rounded-lg font-semibold hover:bg-yellow-400 transition">
+          Explore Our Services
+        </a>
+      </div>
+      <!-- Image -->
+      <div class="md:w-1/2 mt-10 md:mt-0">
+        <img src="hero-img.png" alt="Healthcare Professionals" class="w-full rounded-lg shadow-lg"> <!-- Replace with a suitable image -->
+      </div>
+    </div>
+    <!-- Decorative Elements -->
+    <div class="absolute top-0 right-0 w-40 h-40 bg-yellow-300 opacity-30 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+    <div class="absolute bottom-0 left-0 w-24 h-24 bg-yellow-400 opacity-20 rounded-full transform translate-x-1/4 translate-y-1/4"></div>
+  </section>
+  
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-blue-600">Our Services</h2>
+            <p class="mt-4 text-lg text-gray-600">
+                Discover a wide range of world-class healthcare services designed to cater to your medical needs.
+            </p>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Service Item -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition">
+                <div class="flex items-center justify-center mb-4 text-4xl text-blue-600">
+                    <i class="fas fa-stethoscope"></i> <!-- Replace with a suitable icon if needed -->
+                </div>
+                <h3 class="text-2xl font-semibold mb-2">General Consultation</h3>
+                <p class="text-gray-600">
+                    Our experienced physicians provide thorough consultations and tailored treatment plans.
+                </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition">
+                <div class="flex items-center justify-center mb-4 text-4xl text-blue-600">
+                    <i class="fas fa-heartbeat"></i> <!-- Replace with a suitable icon if needed -->
+                </div>
+                <h3 class="text-2xl font-semibold mb-2">Cardiology Services</h3>
+                <p class="text-gray-600">
+                    Comprehensive cardiac care with advanced diagnostic tools and treatments.
+                </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition">
+                <div class="flex items-center justify-center mb-4 text-4xl text-blue-600">
+                    <i class="fas fa-brain"></i> <!-- Replace with a suitable icon if needed -->
+                </div>
+                <h3 class="text-2xl font-semibold mb-2">Neurology</h3>
+                <p class="text-gray-600">
+                    Expert neurological care for various conditions, ensuring accurate diagnoses and treatments.
+                </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition">
+                <div class="flex items-center justify-center mb-4 text-4xl text-blue-600">
+                    <i class="fas fa-x-ray"></i> <!-- Replace with a suitable icon if needed -->
+                </div>
+                <h3 class="text-2xl font-semibold mb-2">Radiology</h3>
+                <p class="text-gray-600">
+                    State-of-the-art imaging technology for precise medical diagnostics.
+                </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition">
+                <div class="flex items-center justify-center mb-4 text-4xl text-blue-600">
+                    <i class="fas fa-user-md"></i> <!-- Replace with a suitable icon if needed -->
+                </div>
+                <h3 class="text-2xl font-semibold mb-2">Pediatrics</h3>
+                <p class="text-gray-600">
+                    Comprehensive medical care for children, from newborns to teenagers.
+                </p>
+            </div>
+
+            <!-- Service Item -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-xl transition">
+                <div class="flex items-center justify-center mb-4 text-4xl text-blue-600">
+                    <i class="fas fa-ambulance"></i> <!-- Replace with a suitable icon if needed -->
+                </div>
+                <h3 class="text-2xl font-semibold mb-2">Emergency Services</h3>
+                <p class="text-gray-600">
+                    24/7 emergency response and care by our team of skilled medical professionals.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Departments Section -->
+<section class="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <div class="container mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-blue-600">Our Medical Departments</h2>
+            <p class="mt-4 text-lg text-gray-600">
+                At NovaHealth, we offer a diverse range of medical specialties to cater to all patient needs.
+            </p>
+        </div>
+
+        <!-- Departments Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Department Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <div class="mb-4">
+                    <img src="cardiology.jpeg" alt="Cardiology Department" class="w-full h-40 object-cover rounded-t-lg">
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Cardiology</h3>
+                <p class="text-gray-600">
+                    Our cardiology department provides top-tier care with the latest diagnostic tools and treatments for heart health.
+                </p>
+            </div>
+
+            <!-- Department Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <div class="mb-4">
+                    <img src="neurology.jpeg" alt="Neurology Department" class="w-full h-40 object-cover rounded-t-lg">
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Neurology</h3>
+                <p class="text-gray-600">
+                    Expert neurological care for conditions related to the brain, spinal cord, and nervous system.
+                </p>
+            </div>
+
+            <!-- Department Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <div class="mb-4">
+                    <img src="orthopedics.jpeg" alt="Orthopedics Department" class="w-full h-40 object-cover rounded-t-lg">
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Orthopedics</h3>
+                <p class="text-gray-600">
+                    Comprehensive orthopedic services, from minor injuries to complex surgeries.
+                </p>
+            </div>
+
+            <!-- Department Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <div class="mb-4">
+                    <img src="pediatrics.jpeg" alt="Pediatrics Department" class="w-full h-40 object-cover rounded-t-lg">
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Pediatrics</h3>
+                <p class="text-gray-600">
+                    Quality healthcare for children and adolescents, ensuring their growth and development.
+                </p>
+            </div>
+
+            <!-- Department Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <div class="mb-4">
+                    <img src="radiology.jpeg" alt="Radiology Department" class="w-full h-40 object-cover rounded-t-lg">
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Radiology</h3>
+                <p class="text-gray-600">
+                    Advanced imaging services to support accurate diagnosis and treatment planning.
+                </p>
+            </div>
+
+            <!-- Department Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <div class="mb-4">
+                    <img src="emergency.jpeg" alt="Emergency Department" class="w-full h-40 object-cover rounded-t-lg">
+                </div>
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Emergency Care</h3>
+                <p class="text-gray-600">
+                    Immediate and expert medical care available 24/7 for all types of emergencies.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-gradient-to-b from-white to-blue-50">
+    <div class="container mx-auto px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-blue-600">Meet Our Expert Doctors</h2>
+            <p class="mt-4 text-lg text-gray-600">
+                At NovaHealth, we pride ourselves on having a team of highly skilled and compassionate medical professionals.
+            </p>
+        </div>
+
+        <!-- Doctors Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <!-- Doctor Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <img src="emma.jpeg" alt="Dr. Emma Johnson" class="w-full h-60 object-cover rounded-t-lg mb-4">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Dr. Emma Johnson</h3>
+                <p class="text-gray-500 italic mb-2">Cardiologist</p>
+                <p class="text-gray-600">
+                    Dr. Johnson specializes in advanced cardiac care with over 15 years of experience in preventive and interventional cardiology.
+                </p>
+            </div>
+
+            <!-- Doctor Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <img src="lee.jpeg" alt="Dr. James Lee" class="w-full h-60 object-cover rounded-t-lg mb-4">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Dr. James Lee</h3>
+                <p class="text-gray-500 italic mb-2">Neurologist</p>
+                <p class="text-gray-600">
+                    With a deep focus on neurological disorders, Dr. Lee provides comprehensive care for patients with brain and spinal issues.
+                </p>
+            </div>
+
+            <!-- Doctor Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <img src="sophia.png" alt="Dr. Sophia Martinez" class="w-full h-60 object-cover rounded-t-lg mb-4">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Dr. Sophia Martinez</h3>
+                <p class="text-gray-500 italic mb-2">Pediatrician</p>
+                <p class="text-gray-600">
+                    Dr. Martinez is committed to ensuring the well-being of children, providing personalized care for infants to teenagers.
+                </p>
+            </div>
+
+            <!-- Doctor Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <img src="micheal.jpeg" alt="Dr. Michael Brown" class="w-full h-60 object-cover rounded-t-lg mb-4">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Dr. Michael Brown</h3>
+                <p class="text-gray-500 italic mb-2">Orthopedic Surgeon</p>
+                <p class="text-gray-600">
+                    Dr. Brown is known for his expertise in joint replacements and sports injuries, with over a decade of successful surgeries.
+                </p>
+            </div>
+
+            <!-- Doctor Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <img src="singh.jpeg" alt="Dr. Priya Singh" class="w-full h-60 object-cover rounded-t-lg mb-4">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Dr. Priya Singh</h3>
+                <p class="text-gray-500 italic mb-2">Radiologist</p>
+                <p class="text-gray-600">
+                    Dr. Singh is an expert in diagnostic imaging, providing accurate and swift interpretations for patient care.
+                </p>
+            </div>
+
+            <!-- Doctor Card -->
+            <div class="p-6 bg-white shadow-lg rounded-lg hover:shadow-2xl transition">
+                <img src="carter.jpeg" alt="Dr. William Carter" class="w-full h-60 object-cover rounded-t-lg mb-4">
+                <h3 class="text-2xl font-semibold text-blue-600 mb-2">Dr. William Carter</h3>
+                <p class="text-gray-500 italic mb-2">Emergency Medicine</p>
+                <p class="text-gray-600">
+                    Dr. Carter is always ready to handle critical cases and emergencies, providing top-level emergency medical attention.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-20 bg-white">
+    <div class="container mx-auto px-6 md:px-12 lg:px-24">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-extrabold text-blue-600">Contact Us</h2>
+            <p class="mt-4 text-lg text-gray-600">
+                Reach out to us for any inquiries or assistance. We're here to help!
+            </p>
+        </div>
+
+        <div class="flex flex-wrap -mx-4">
+            <!-- Contact Form -->
+            <div class="w-full lg:w-2/3 px-4 mb-12 lg:mb-0">
+                <div class="bg-white shadow-lg rounded-lg p-8">
+                    <form action="https://formspree.io/f/xgveyyrb" method="POST">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-semibold mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-semibold mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" placeholder="Enter your email" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-semibold mb-2">Your Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-600" placeholder="Type your message" required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Contact Details -->
+            <div class="w-full lg:w-1/3 px-4">
+                <div class="bg-gray-100 shadow-lg rounded-lg p-8">
+                    <h3 class="text-2xl font-bold text-blue-600 mb-4">Contact Information</h3>
+                    <p class="text-gray-600 mb-6">
+                        We are located in the heart of the city and accessible via all major transport routes.
+                    </p>
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-gray-800">Address</h4>
+                        <p class="text-gray-600">41 Road F Close, Festac Town, Lagos, Nigeria</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-gray-800">Phone</h4>
+                        <p class="text-gray-600">+1 (234) 567-890</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-gray-800">Email</h4>
+                        <p class="text-gray-600">contact@novahealth.com</p>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold text-gray-800">Hours of Operation</h4>
+                        <p class="text-gray-600">Mon - Fri: 8:00 AM - 8:00 PM</p>
+                        <p class="text-gray-600">Sat - Sun: 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Integration -->
+        <div class="mt-12">
+            <iframe class="w-full h-80 rounded-lg" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434508385!2d144.9556514158748!3d-37.81732717975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43c8eb1b9d%3A0x5045675218ce6e0!2s123%20Main%20St%2C%20YourCity%20Country!5e0!3m2!1sen!2s!4v1611111111111" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
+</section>
+</body>
+</html>
+
+  <script>
+    // Toggle mobile menu visibility
+    document.getElementById('menuToggle').addEventListener('click', function () {
+      const mobileMenu = document.getElementById('mobileMenu');
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
