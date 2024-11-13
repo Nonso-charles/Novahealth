@@ -23,6 +23,7 @@
         <a href="#departments" class="text-gray-700 hover:text-blue-600 font-medium">Departments</a>
         <a href="#doctors" class="text-gray-700 hover:text-blue-600 font-medium">Doctors</a>
         <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+        <a href="#faq" class="text-gray-700 hover:text-blue-600 font-medium">FAQ</a>
       </div>
 
       <!-- CTA Button -->
@@ -43,6 +44,7 @@
       <a href="#departments" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Departments</a>
       <a href="#doctors" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Doctors</a>
       <a href="#contact" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Contact</a>
+      <a href="#faq" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">FAQ</a>
       <a href="appointment.html" class="block py-2 px-4 bg-blue-600 text-white font-semibold hover:bg-blue-700">Book Appointment</a>
     </div>
   </nav>
@@ -310,7 +312,81 @@
     </div>
 </section>
 
-<section class="py-20 bg-white">
+<!-- FAQ Section -->
+  <section class="max-w-5xl mx-auto py-16 px-6 lg:px-8" id="faq">
+    <h2 class="text-3xl font-bold text-center mb-10">Frequently Asked Questions</h2>
+    <div class="space-y-6">
+      
+      <!-- FAQ Item 1 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <button onclick="toggleAnswer('faq1')" class="w-full text-left focus:outline-none">
+          <h3 class="text-xl font-semibold flex justify-between items-center">
+            What services does NovaHealth offer?
+            <span class="ml-2 text-blue-600">+</span>
+          </h3>
+        </button>
+        <p id="faq1" class="mt-4 text-gray-700 hidden">
+          NovaHealth provides a range of services including primary care, telemedicine consultations, specialized medical treatments, and comprehensive wellness programs.
+        </p>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <button onclick="toggleAnswer('faq2')" class="w-full text-left focus:outline-none">
+          <h3 class="text-xl font-semibold flex justify-between items-center">
+            How can I book an appointment?
+            <span class="ml-2 text-blue-600">+</span>
+          </h3>
+        </button>
+        <p id="faq2" class="mt-4 text-gray-700 hidden">
+          You can book an appointment through our online scheduling tool on the NovaHealth website or by calling our support line.
+        </p>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <button onclick="toggleAnswer('faq3')" class="w-full text-left focus:outline-none">
+          <h3 class="text-xl font-semibold flex justify-between items-center">
+            What insurance plans do you accept?
+            <span class="ml-2 text-blue-600">+</span>
+          </h3>
+        </button>
+        <p id="faq3" class="mt-4 text-gray-700 hidden">
+          NovaHealth accepts most major insurance plans, including private insurers and government healthcare programs. Please contact us for a full list of accepted providers.
+        </p>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <button onclick="toggleAnswer('faq4')" class="w-full text-left focus:outline-none">
+          <h3 class="text-xl font-semibold flex justify-between items-center">
+            Do you offer telemedicine services?
+            <span class="ml-2 text-blue-600">+</span>
+          </h3>
+        </button>
+        <p id="faq4" class="mt-4 text-gray-700 hidden">
+          Yes, NovaHealth offers secure and convenient telemedicine consultations to provide care wherever you are.
+        </p>
+      </div>
+
+      <!-- FAQ Item 5 -->
+      <div class="bg-white p-6 rounded-lg shadow-lg">
+        <button onclick="toggleAnswer('faq5')" class="w-full text-left focus:outline-none">
+          <h3 class="text-xl font-semibold flex justify-between items-center">
+            How do I access my medical records?
+            <span class="ml-2 text-blue-600">+</span>
+          </h3>
+        </button>
+        <p id="faq5" class="mt-4 text-gray-700 hidden">
+          Patients can access their medical records via our secure online portal. Sign up on the NovaHealth website to create your account and manage your medical information.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+
+<section class="py-20 bg-white" id="contact">
     <div class="container mx-auto px-6 md:px-12 lg:px-24">
         <!-- Section Header -->
         <div class="text-center mb-12">
@@ -376,6 +452,53 @@
         </div>
     </div>
 </section>
+
+<footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+
+        <!-- About NovaHealth -->
+        <div>
+            <h2 class="text-xl font-semibold mb-4">About NovaHealth</h2>
+            <p class="text-gray-400">
+                NovaHealth is committed to providing cutting-edge medical solutions and health services for all. Our vision is to improve well-being through innovative healthcare approaches.
+            </p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div>
+            <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
+            <ul class="text-gray-400 space-y-2">
+                <li><a href="#" class="hover:text-blue-400">Home</a></li>
+                <li><a href="#" class="hover:text-blue-400">Services</a></li>
+                <li><a href="#" class="hover:text-blue-400">Our Team</a></li>
+                <li><a href="#" class="hover:text-blue-400">Contact Us</a></li>
+                <li><a href="#" class="hover:text-blue-400">FAQs</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Information -->
+        <div>
+            <h2 class="text-xl font-semibold mb-4">Get in Touch</h2>
+            <ul class="text-gray-400 space-y-2">
+                <li><span class="font-semibold">Phone:</span> <a href="tel:+1234567890" class="hover:text-blue-400">+1 (234) 567-890</a></li>
+                <li><span class="font-semibold">Email:</span> <a href="mailto:contact@novahealth.com" class="hover:text-blue-400">contact@novahealth.com</a></li>
+                <li><span class="font-semibold">Location:</span> 123 NovaHealth Street, Wellness City</li>
+            </ul>
+            <div class="mt-4 flex space-x-4">
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-linkedin fa-lg"></i></a>
+                <a href="#" class="hover:text-blue-400"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="mt-8 border-t border-gray-700 pt-4 text-center text-gray-500">
+        <p>&copy; 2024 NovaHealth. All rights reserved.</p>
+    </div>
+</footer>
+
 </body>
 </html>
 
@@ -385,6 +508,12 @@
       const mobileMenu = document.getElementById('mobileMenu');
       mobileMenu.classList.toggle('hidden');
     });
+    
+     // JavaScript to toggle the answer display
+ function toggleAnswer(id) {
+     const answer = document.getElementById(id);
+     answer.classList.toggle('hidden');
+ }
   </script>
 </body>
 </html>
